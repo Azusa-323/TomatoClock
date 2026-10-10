@@ -1,0 +1,20 @@
+# 构建产物
+bin/
+obj/
+publish/
+installer/Output/
+
+# 用户目录文件
+.vs/
+*.user
+*.suo
+
+# IDE
+.idea/
+.vscode/
+
+# 日志
+*.log
+
+# Command Code 本地目录
+.commandcode/

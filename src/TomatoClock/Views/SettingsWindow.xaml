@@ -1,0 +1,72 @@
+<Window x:Class="TomatoClock.Views.SettingsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prop="clr-namespace:TomatoClock.Properties"
+        Title="{x:Static prop:Strings.SettingsTitle}"
+        Height="460" Width="400"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        ShowInTaskbar="False"
+        Background="{DynamicResource WindowBackgroundBrush}">
+    <Grid Margin="24">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="150"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="{x:Static prop:Strings.LabelFocusMinutes}"
+                   VerticalAlignment="Center" FontSize="13" Margin="0,0,0,10"
+                   Foreground="{DynamicResource PrimaryTextBrush}"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding FocusMinutes, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="{x:Static prop:Strings.LabelShortBreakMinutes}"
+                   VerticalAlignment="Center" FontSize="13" Margin="0,0,0,10"
+                   Foreground="{DynamicResource PrimaryTextBrush}"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding ShortBreakMinutes, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0" Text="{x:Static prop:Strings.LabelLongBreakMinutes}"
+                   VerticalAlignment="Center" FontSize="13" Margin="0,0,0,10"
+                   Foreground="{DynamicResource PrimaryTextBrush}"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding LongBreakMinutes, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0" Text="{x:Static prop:Strings.LabelLongBreakInterval}"
+                   VerticalAlignment="Center" FontSize="13" Margin="0,0,0,10"
+                   Foreground="{DynamicResource PrimaryTextBrush}"/>
+        <TextBox Grid.Row="3" Grid.Column="1" Text="{Binding LongBreakInterval, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,10"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0" Text="{x:Static prop:Strings.LabelSound}"
+                   VerticalAlignment="Center" FontSize="13" Margin="0,0,0,10"
+                   Foreground="{DynamicResource PrimaryTextBrush}"/>
+        <DockPanel Grid.Row="4" Grid.Column="1" Margin="0,0,0,10">
+            <Button DockPanel.Dock="Right" Content="{x:Static prop:Strings.BtnTestSound}"
+                    Command="{Binding TestSoundCommand}" Padding="12,5" FontSize="13"/>
+            <ComboBox ItemsSource="{Binding SoundNames}"
+                      SelectedIndex="{Binding SoundIndex}"/>
+        </DockPanel>
+
+        <CheckBox Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2"
+                  Content="{x:Static prop:Strings.LabelAutoCycle}" IsChecked="{Binding AutoCycle}"/>
+        <CheckBox Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2"
+                  Content="{x:Static prop:Strings.LabelAlwaysOnTop}" IsChecked="{Binding AlwaysOnTop}"/>
+        <CheckBox Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2"
+                  Content="{x:Static prop:Strings.LabelStartWithWindows}" IsChecked="{Binding StartWithWindows}"/>
+
+        <UniformGrid Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" Columns="2">
+            <Button Content="{x:Static prop:Strings.BtnSave}" Command="{Binding SaveCommand}"/>
+            <Button Content="{x:Static prop:Strings.BtnCancel}" Command="{Binding CancelCommand}"/>
+        </UniformGrid>
+    </Grid>
+</Window>

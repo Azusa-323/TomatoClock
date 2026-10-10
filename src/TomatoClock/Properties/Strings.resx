@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppTitle" xml:space="preserve">
+    <value>番茄时钟</value>
+  </data>
+  <data name="SessionFocus" xml:space="preserve">
+    <value>专注中</value>
+  </data>
+  <data name="SessionShortBreak" xml:space="preserve">
+    <value>短休息</value>
+  </data>
+  <data name="SessionLongBreak" xml:space="preserve">
+    <value>长休息</value>
+  </data>
+  <data name="CycleFormat" xml:space="preserve">
+    <value>本组 {0}/{1} 番茄</value>
+  </data>
+  <data name="TodayCountFormat" xml:space="preserve">
+    <value>今日番茄 {0}</value>
+  </data>
+  <data name="BtnStart" xml:space="preserve">
+    <value>开始</value>
+  </data>
+  <data name="BtnPause" xml:space="preserve">
+    <value>暂停</value>
+  </data>
+  <data name="BtnResume" xml:space="preserve">
+    <value>继续</value>
+  </data>
+  <data name="BtnSkip" xml:space="preserve">
+    <value>跳过</value>
+  </data>
+  <data name="BtnReset" xml:space="preserve">
+    <value>重置</value>
+  </data>
+  <data name="BtnSettings" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="BtnSave" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="BtnCancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="BtnTestSound" xml:space="preserve">
+    <value>试听</value>
+  </data>
+  <data name="ToastFocusTitle" xml:space="preserve">
+    <value>专注完成</value>
+  </data>
+  <data name="ToastFocusAutoMsg" xml:space="preserve">
+    <value>休息一下,已自动开始休息</value>
+  </data>
+  <data name="ToastFocusMsg" xml:space="preserve">
+    <value>休息一下!</value>
+  </data>
+  <data name="ToastBreakTitle" xml:space="preserve">
+    <value>休息结束</value>
+  </data>
+  <data name="ToastBreakAutoMsg" xml:space="preserve">
+    <value>已自动开始专注</value>
+  </data>
+  <data name="ToastBreakMsg" xml:space="preserve">
+    <value>开始下一个番茄吧</value>
+  </data>
+  <data name="TrayShow" xml:space="preserve">
+    <value>显示主窗口</value>
+  </data>
+  <data name="TrayTogglePause" xml:space="preserve">
+    <value>暂停 / 继续</value>
+  </data>
+  <data name="TrayExit" xml:space="preserve">
+    <value>退出</value>
+  </data>
+  <data name="SettingsTitle" xml:space="preserve">
+    <value>设置</value>
+  </data>
+  <data name="LabelFocusMinutes" xml:space="preserve">
+    <value>专注时长(分钟)</value>
+  </data>
+  <data name="LabelShortBreakMinutes" xml:space="preserve">
+    <value>短休息时长(分钟)</value>
+  </data>
+  <data name="LabelLongBreakMinutes" xml:space="preserve">
+    <value>长休息时长(分钟)</value>
+  </data>
+  <data name="LabelLongBreakInterval" xml:space="preserve">
+    <value>长休间隔(几个番茄)</value>
+  </data>
+  <data name="LabelSound" xml:space="preserve">
+    <value>提示音</value>
+  </data>
+  <data name="LabelAutoCycle" xml:space="preserve">
+    <value>自动循环(专注与休息自动衔接)</value>
+  </data>
+  <data name="LabelAlwaysOnTop" xml:space="preserve">
+    <value>窗口置顶</value>
+  </data>
+  <data name="LabelStartWithWindows" xml:space="preserve">
+    <value>开机自启动</value>
+  </data>
+  <data name="SingleInstanceMsg" xml:space="preserve">
+    <value>番茄时钟已在运行。</value>
+  </data>
+</root>
